@@ -13,6 +13,10 @@ from gsheets import backend
     ('Sheet 1', "'Sheet 1'"),
     ('Q1 Report', "'Q1 Report'"),
     ('Sales!', "'Sales!'"),
+    ("Jon's Data", "'Jon''s Data'"),
+    ("O'Brien's Q1", "'O''Brien''s Q1'"),
+    ('日本語', "'日本語'"),
+    ('Café', "'Café'"),
 ])
 def test_quote(name, expected):
     assert backend.quote(name) == expected
